@@ -1,0 +1,108 @@
+body { font-family: Times, "Times New Roman", sans-serif; }
+section { overflow: hidden; }
+a { color: black; }
+.centered { margin: 0 auto; }
+.col {
+  float: left;
+  margin-right: 10px;
+}
+.col:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.one { width: 60px; }
+.two { width: 140px; }
+.three { width: 220px; }
+.four { width: 300px; }
+.five { width: 380px; }
+.six { width: 460px; }
+.seven { width: 540px; }
+.eight { width: 620px; }
+.nine { width: 700px; }
+.ten { width: 780px; }
+section#wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+header {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+h1 {
+  font-weight: normal;
+  font-size: 0.8em;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+h1 em {
+  display: block;
+  font-style: normal;
+}
+#content #main {
+  float: left;
+  margin-right: 10px;
+  width: 540px;
+}
+#content #main #clip {
+  overflow: hidden;
+  width: 520px;
+  height: 290px;
+  position: relative;
+}
+#content #main #clip ol { margin-top: -50px; }
+#content #main #clip ol img {
+  position: absolute;
+  margin: -100px 0 0 -50px;
+  visibility: hidden;
+}
+#content #main #slider #line {
+  height: 1px;
+  background-color: black;
+  margin-top: 20px;
+  width: 475px;
+  margin-left: 20px;
+}
+#content #main #slider a {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 0.8em;
+}
+#content #main #slider img { margin-bottom: 0.2em; }
+#content #links {
+  float: left;
+  margin-right: 10px;
+  width: 140px;
+}
+#content #links a { font-size: 0.8em; }
+#textual {
+  margin-top: 2em;
+  overflow: auto;
+}
+#textual p {
+  line-height: 1.5em;
+  font-size: 0.8em;
+}
+#textual #my-story {
+  float: left;
+  margin-right: 10px;
+  width: 300px;
+}
+#textual #about-movember {
+  float: left;
+  margin-right: 10px;
+  width: 220px;
+}
+footer {
+  clear: left;
+  font-size: 0.8em;
+  margin: 3em 0;
+}
+footer a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
