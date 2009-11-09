@@ -1,7 +1,5 @@
-require 'ftools'
-
 class Mo
-  attr_reader :path, :href, :created_at, :modified_at
+  attr_reader :path, :href
   
   DISK_PATH = "#{APP_ROOT}/public/mos"
   
@@ -21,19 +19,15 @@ class Mo
     File.mtime(self.path)
   end
   
-  def <=>(comparable)
-    [comparable.created_at] <=> [self.created_at]
-  end
-  
   class << self
     def all
-      files.map {|f| new(f) }.sort
+      files.sort{|a,b| File.mtime(a) <=> File.mtime(b)}.map{|f| new(f) }
     end
     
     private 
     
     def files
-      Dir["#{DISK_PATH}/*.jpg"]
+      Dir["#{DISK_PATH}/*"]
     end
   end
 end

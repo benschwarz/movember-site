@@ -1,6 +1,18 @@
 require 'sinatra'
 require 'haml'
-require 'rdiscount'
+
+module Haml 
+  module Filters 
+    # Forces RDiscount to process with Smarty Pants. 
+    module Smartypants 
+      include ::Haml::Filters::Base 
+      lazy_require 'rdiscount' 
+      def render(text) 
+        ::RDiscount.new(text, :smart).to_html 
+      end 
+    end 
+  end 
+end
 
 APP_ROOT = File.join(File.dirname(__FILE__))
 require 'mo'
