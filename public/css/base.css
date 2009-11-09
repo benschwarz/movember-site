@@ -61,13 +61,13 @@ h1 em {
   visibility: hidden;
 }
 #content #main #clip ol img.current { visibility: visible; }
-#content #main #slider-holder { padding-left: 3em; }
+#content #main #slider-holder { padding-left: 22px; }
 #content #main .ui-slider {
   position: relative;
   text-align: left;
   margin-top: 20px;
   margin-bottom: 45px;
-  width: 415px;
+  width: 473px;
 }
 #content #main .ui-slider .ui-slider-handle {
   position: absolute;
