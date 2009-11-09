@@ -20,6 +20,7 @@ a { color: black; }
 .eight { width: 620px; }
 .nine { width: 700px; }
 .ten { width: 780px; }
+.amp { font-style: italic; }
 section#wrapper {
   width: 700px;
   margin: 0 auto;
@@ -59,19 +60,26 @@ h1 em {
   margin: -100px 0 0 -50px;
   visibility: hidden;
 }
-#content #main #slider #line {
-  height: 1px;
-  background-color: black;
+#content #main #clip ol img.current { visibility: visible; }
+#content #main #slider-holder { padding-left: 3em; }
+#content #main .ui-slider {
+  position: relative;
+  text-align: left;
   margin-top: 20px;
-  width: 475px;
-  margin-left: 20px;
+  margin-bottom: 45px;
+  width: 415px;
 }
-#content #main #slider a {
+#content #main .ui-slider .ui-slider-handle {
+  position: absolute;
+  margin-left: -22px;
+  z-index: 2;
+  cursor: default;
   text-decoration: none;
   font-style: italic;
   font-size: 0.8em;
 }
-#content #main #slider img { margin-bottom: 0.2em; }
+#content #main .ui-slider .ui-slider-handle img { margin-bottom: 0.2em; }
+#content #main .ui-slider-horizontal { border-top: 1px solid black; }
 #content #links {
   float: left;
   margin-right: 10px;
