@@ -21,7 +21,7 @@ class Mo
   
   class << self
     def all
-      files.sort{|a,b| File.ctime(a) <=> File.ctime(b)}.map{|f| new(f) }
+      files.sort{|a,b| File.basename(a) <=> File.basename(b)}.map{|f| new(f) }
     end
     
     private 
