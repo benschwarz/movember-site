@@ -72,8 +72,6 @@ h1 em {
 #content #main .ui-slider .ui-slider-handle {
   position: absolute;
   margin-left: -22px;
-  z-index: 2;
-  cursor: default;
   text-decoration: none;
   font-style: italic;
   font-size: 0.8em;
